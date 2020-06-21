@@ -2,6 +2,14 @@ $dark-blue: #223C62;
 $blue: #1673FF;
 $green: #18C591;
 
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
 
 #login-title{
   font-size: 700%;
@@ -11,4 +19,13 @@ $green: #18C591;
 #login-subtitle{
   margin-top: 5%;
   font-size: 150%;
+}
+body{
+  font-family: "Roboto" !important;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat Bold";
+}
+p{
+  font-family: Roboto;
 }
