@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>TP Praktikan</title>
+  <title>Profile Praktikan</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -70,73 +70,106 @@
         </aside>
       </div>
 
-      <!-- Main Content -->
-      <div class="main-content">
+<!-- Main Content -->
+    <div class="main-content">
         <section class="section">
-            <div class="section-header">
-                <h1>Sisa Waktu Pengerjaan TP: 12Jam 7Menit 2 Detik !</h1>
-            </div>
-            <div class="section-body">
-                <h2 class="section-title">File Tugas Pendahuluan</h2>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <a href=# class="btn-fix">
-                        <div class="card card-statistic-1">
-                            <div class="card-icon bg-primary">
-                                <i class="fas fa-folder-open"></i>
-                            </div>
-                            <div class="card-wrap">
-                                <div class="card-header">
-                                    <!-- <h4></h4> -->
-                                </div>
-                                <div class="card-body">
-                                    TP 4
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="section-body">
-                    <h2 class="section-title">Upload Tugas Pendahuluan</h2>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Upload Tugas Pendahuluan</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label>Pilih Modul</label>
-                                        <select class="form-control">
-                                            <option>--- Pilih Modul ---</option>
-                                            <option>Modul 2</option>
-                                            <option>Modul 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Pilih Kode Asisten</label>
-                                        <select class="form-control">
-                                            <option>--- Pilih Kode Asisten ---</option>
-                                            <option>DEF</option>
-                                            <option>RAA</option>
-                                        </select>
-                                    </div>
-                                    <form action="#" class="dropzone" id="mydropzone">
-                                        <div class="fallback">
-                                            <input name="file" type="file" multiple />
-                                        </div>
-                                    </form>
-                                    <div class="card-footer text-right">
-                                        <button class="btn btn-primary mr-1" type="submit" id="modal-11">Submit</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          <div class="section-header">
+            <h1>Profile</h1>
+          </div>
+          <div class="section-body">
+            <h2 class="section-title">Hi, Riski!</h2>
+            <p class="section-lead">
+              Information about yourself on this page.
+            </p>
+             <div class="row mt-sm-4">
+              <div class="col-12 col-md-12 col-lg-12">
+                <div class="card profile-widget">
+                  <div class="profile-widget-header">
+                    <img alt="image" src="../assets/images/avatar/avatar-1.png" class="rounded-circle profile-widget-picture">
+                    <div class="profile-widget-items">
+                        <div class="card-header">
+                            <h4>Riski Ananda</h4>
+                          </div>
                     </div>
+                  </div>
+                  <div class="profile-widget-description">
+                    <div class="profile-widget-name">Riski Ananda<div class="text-muted d-inline font-weight-normal"><div class="slash"></div> Information System</div></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Full Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Riski Ananda" disabled>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Student ID</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="1202184000" disabled>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Class</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" placeholder="SI-42-INT" disabled>
+                        </div>
+                      </div>
                 </div>
-        </section>
-    </div>
-    <footer class="main-footer">
+                <div class="profile-widget-description">
+                    <div class="profile-widget-name">Account Management<div class="text-muted d-inline font-weight-normal"></div></div>
+                  </div>
+                  <div class="modal-dialog m-0" role="document"></div>
+                  <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-9">
+                          <button class="btn btn-primary" id="modal-5">Change Password</button>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              </div>
+              </section>
+              <form class="modal-part" id="modal-login-part">
+                <div class="form-group">
+                  <label>Old Password</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fas fa-lock"></i>
+                      </div>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>New Password</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fas fa-lock"></i>
+                      </div>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Re-Enter New Password</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fas fa-lock"></i>
+                      </div>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                  </div>
+                </div>
+              </form>
+
+      <!-- Main Content End-->
+      <footer class="main-footer">
         <div class="footer-left">
           Copyright &copy; Daspro Laboratory 2020
         </div>
@@ -162,7 +195,6 @@
   <script src="../assets/node_modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
   <script src="../assets/node_modules/summernote/dist/summernote-bs4.js"></script>
   <script src="../assets/node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
-
   <!-- Template JS File -->
   <script src="../assets/js/scripts.js"></script>
   <script src="../assets/js/custom.js"></script>
@@ -171,7 +203,5 @@
   <script src="../assets/js/page/index.js"></script>
   <script src="../assets/js/page/chart-data.js"></script>
   <script src="../assets/js/page/bootstrap-modal.js"></script>
-
-  
 </body>
 </html>
