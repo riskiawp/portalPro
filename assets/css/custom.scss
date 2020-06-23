@@ -29,3 +29,27 @@ h1,h2,h3,h4,h5,h6{
 p{
   font-family: Roboto;
 }
+
+td{
+  padding: 0px !important;
+}
+
+.pilihan-jawaban{
+  tr:hover{
+    background-color: #efefef;
+    .selected-answer{
+      background-color: $green;
+    }
+  }
+
+}
+.btn-tes-awal{
+  margin: 1%;
+}
+
+.answer-sheet{
+  overflow: scroll;
+  overflow-scrolling: auto;
+
+
+}

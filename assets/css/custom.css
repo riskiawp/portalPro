@@ -29,4 +29,24 @@ p {
   font-family: Roboto;
 }
 
+td {
+  padding: 0px !important;
+}
+
+.pilihan-jawaban tr:hover {
+  background-color: #efefef;
+}
+.pilihan-jawaban tr:hover .selected-answer {
+  background-color: #18C591;
+}
+
+.btn-tes-awal {
+  margin: 1%;
+}
+
+.answer-sheet {
+  overflow: scroll;
+  overflow-scrolling: auto;
+}
+
 /*# sourceMappingURL=custom.css.map */
