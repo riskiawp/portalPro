@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Daftar Nilai</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/fh-3.1.7/r-2.2.5/sc-2.0.2/datatables.min.css"/>
+
+
+
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/sources/scss/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body>
+<div id="app">
+    <div class="main-wrapper">
+        <div class="navbar-bg"></div>
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <form class="form-inline mr-auto">
+                <ul class="navbar-nav mr-3">
+                    <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </form>
+            <ul class="navbar-nav navbar-right">
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                    <img alt="image" src="../assets/images/avatar/avatar-1.png" class="rounded-circle mr-1">
+                    <div class="d-sm-none d-lg-inline-block">Hi, Riski</div></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="features-profile.html" class="dropdown-item has-icon">
+                            <i class="far fa-user"></i> Profile
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item has-icon text-danger">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-sidebar">
+            <aside id="sidebar-wrapper">
+                <div class="sidebar-brand">
+                    <a href="index.html">Daspro Laboratory</a>
+                </div>
+                <div class="sidebar-brand sidebar-brand-sm">
+                    <a href="index.html">DL</a>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="nav-item dropdown active">
+                        <a href="#"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#"><i class="fas fa-download"></i> <span>Submission</span></a>
+                    </li>
+                    <li><a class="nav-link" href="#"><i class="fas fa-pen-square"></i> <span>Grade Input</span></a></li>
+                    <li><a class="nav-link" href="#"><i class="fas fa-shield-alt"></i> <span>Token Generator</span></a></li>
+                    <li><a class="nav-link" href="#"><i class="fas fa-folder"></i> <span>Modules</span></a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="section">
+                <div class="section-header">
+                    <h1>Grade List</h1>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>ZAF</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="modul1-tab" data-toggle="tab" href="#modul1" role="tab" aria-controls="modul1" aria-selected="true">Modul 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="modul2-tab" data-toggle="tab" href="#modul2" role="tab" aria-controls="modul2" aria-selected="false">Modul 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="modul3-tab" data-toggle="tab" href="#modul3" role="tab" aria-controls="modul3" aria-selected="false">Modul 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="modul4-tab" data-toggle="tab" href="#modul3" role="tab" aria-controls="modul4" aria-selected="false">Modul 4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="modul5-tab" data-toggle="tab" href="#modul3" role="tab" aria-controls="modul5" aria-selected="false">Modul 5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="modul6-tab" data-toggle="tab" href="#modul3" role="tab" aria-controls="modul6" aria-selected="false">Modul 6</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-bordered" id="myTab3Content">
+                            <div class="tab-pane fade show active" id="modul1" role="tabpanel" aria-labelledby="modul1-tab">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-lg table-submisi">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>SID</th>
+                                            <th>Name</th>
+                                            <th>Class</th>
+                                            <th>Preliminary Grade</th>
+                                            <th>Pretest Grade</th>
+                                            <th>Assigment Grade</th>
+                                            <th>Total</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1202180841</td>
+                                            <td>Arddhana Arddhanu</td>
+                                            <td>SI-42-Reguler</td>
+                                            <td>77</td>
+                                            <td>70</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td><a href="input-nilai-asisten.html" class="btn btn-icon btn-dark"><i class="far fa-edit"></i> Edit</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1202180821</td>
+                                            <td>Arddhana Ardd anus</td>
+                                            <td>SI-42-Reguler</td>
+                                            <td>70</td>
+                                            <td>70</td>
+                                            <td>100</td>
+                                            <td>70</td>
+                                            <td><a href="input-nilai-asisten.html" class="btn btn-icon btn-dark"><i class="far fa-edit"></i> Edit</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modul2" role="tabpanel" aria-labelledby="modul2-tab">
+                                <div class="table-responsive">
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modul3" role="tabpanel" aria-labelledby="modul3-tab">
+                                <div class="table-responsive">
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modul4" role="tabpanel" aria-labelledby="modul4-tab">
+                                <div class="table-responsive">
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modul5" role="tabpanel" aria-labelledby="modul5-tab">
+                                <div class="table-responsive">
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modul6" role="tabpanel" aria-labelledby="modul6-tab">
+                                <div class="table-responsive">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-left">
+            Copyright &copy; Daspro Laboratory 2020
+        </div>
+        <div class="footer-right">
+            Supported by EDE Laboratory
+        </div>
+    </footer>
+</div>
+<!-- General JS Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="../assets/js/stisla.js"></script>
+
+<!-- JS Libraies -->
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/fh-3.1.7/r-2.2.5/sc-2.0.2/datatables.min.js"></script>
+
+
+<!-- Template JS File -->
+<script src="../assets/js/scripts.js"></script>
+<script src="../assets/js/custom.js"></script>
+
+<!-- Page Specific JS File -->
+<script src="../assets/js/page/index.js"></script>
+<script src="../assets/js/page/chart-data.js"></script>
+<script src="../assets/js/page/data-Tables.js"></script>
+</body>
+</html>
