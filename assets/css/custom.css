@@ -49,4 +49,19 @@ td {
   overflow-scrolling: auto;
 }
 
+th, td {
+  white-space: nowrap;
+}
+
+div.dataTables_wrapper {
+  margin: 0 auto;
+}
+div.dataTables_wrapper table td {
+  padding: 12px !important;
+}
+
+tr {
+  height: 50px;
+}
+
 /*# sourceMappingURL=custom.css.map */

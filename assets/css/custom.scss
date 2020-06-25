@@ -50,6 +50,19 @@ td{
 .answer-sheet{
   overflow: scroll;
   overflow-scrolling: auto;
+}
 
-
+th, td {
+  white-space: nowrap;
+}
+div.dataTables_wrapper {
+  margin: 0 auto;
+  table{
+    td{
+      padding: 12px !important;
+    }
+  }
+}
+tr {
+  height: 50px;
 }
