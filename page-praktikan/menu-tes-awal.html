@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Input Nilai Asisten</title>
+    <title>Dashboard Praktikan</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -34,7 +34,7 @@
             <ul class="navbar-nav navbar-right">
                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                     <img alt="image" src="../assets/images/avatar/avatar-1.png" class="rounded-circle mr-1">
-                    <div class="d-sm-none d-lg-inline-block">Hi, Arddhana</div></a>
+                    <div class="d-sm-none d-lg-inline-block">Hi, Riski</div></a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="features-profile.html" class="dropdown-item has-icon">
                             <i class="far fa-user"></i> Profile
@@ -60,11 +60,12 @@
                         <a href="#"><i class="fas fa-fire"></i><span>Dashboard</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#"><i class="fas fa-download"></i> <span>Submission</span></a>
+                        <a href="#"><i class="fas fa-pencil-ruler"></i> <span>Pretest</span></a>
                     </li>
-                    <li><a class="nav-link" href="#"><i class="fas fa-pen-square"></i> <span>Grade Input</span></a></li>
-                    <li><a class="nav-link" href="#"><i class="fas fa-shield-alt"></i> <span>Token Generator</span></a></li>
+                    <li><a class="nav-link" href="#"><i class="fas fa-upload"></i> <span>Preliminary Task</span></a></li>
+                    <li><a class="nav-link" href="#"><i class="fas fa-file-upload"></i> <span>Assignment</span></a></li>
                     <li><a class="nav-link" href="#"><i class="fas fa-folder"></i> <span>Modules</span></a></li>
+                    <li><a class="nav-link" href="#"><i class="fas fa-th-list"></i> <span>Grades</span></a></li>
                 </ul>
             </aside>
         </div>
@@ -73,56 +74,25 @@
         <div class="main-content">
             <section class="section">
                 <div class="section-header">
-                    <div class="btn">
-                        <button type="button" class="btn btn-danger fa fa-arrow-left"></button>
-                    </div>
-                    <h1>Grade Input</h1>
+                    <h1>Pretest</h1>
                 </div>
-                <!-- PUT THE BODY HERE-->
-                <div class="card">
-                    <div class="card-body">
-                        
-                      <div class="form-group row">
-                        <label for="inputSID" class="col-sm-3 col-form-label">SID</label>
-                        <div class="col-sm-9">
-                          <input class="form-control" id="inputSID" placeholder="1202180841" disabled>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card card-statistic-1">
+                            <div class="card-icon bg-success btn-success">
+                                <b>START</b>
+                            </div>
+                            <div class="card-wrap">
+                                <div class="card-header">
+                                    <h4>Start on 15 Minutes Again</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Modul 4</h4>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputSN" class="col-sm-3 col-form-label">Student Name</label>
-                        <div class="col-sm-9">
-                          <input class="form-control" id="inputSN" placeholder="Arddhana Arddhanu" disabled>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputClass" class="col-sm-3 col-form-label">Class</label>
-                        <div class="col-sm-9">
-                          <input class="form-control" id="inputClass" placeholder="SI-42-Regular" disabled>
-                        </div>
-                      </div>
-                      
-                      <div class="form-group row">
-                        <label for="inputTP" class="col-sm-3 col-form-label">Preliminary Grade</label>
-                        <div class="col-sm-9">
-                          <input class="form-control" id="inputTP" placeholder="Preliminary Grade">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputTA" class="col-sm-3 col-form-label">Pretest Grade</label>
-                        <div class="col-sm-9">
-                          <input class="form-control" id="inputTA" placeholder="Pretest Grade">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputJurnal" class="col-sm-3 col-form-label">Assignment Grade</label>
-                        <div class="col-sm-9">
-                          <input class="form-control" id="inputJurnal" placeholder="Assignement Grade">
-                        </div>
-                      </div>
-                      <div class="form-group text-right">
-                        <button class="btn btn-success mr-1" type="submit" id="modal-12">Submit</button>
                     </div>
-                    
+                </div>
             </section>
         </div>
     </div>
@@ -159,6 +129,5 @@
 <!-- Page Specific JS File -->
 <script src="../assets/js/page/index.js"></script>
 <script src="../assets/js/page/chart-data.js"></script>
-<script src="../assets/js/page/bootstrap-modal.js"></script>
 </body>
 </html>
