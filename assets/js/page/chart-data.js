@@ -1,5 +1,5 @@
-var ctx = document.getElementById('chartDashboardPraktikan').getContext('2d');
-var chartDashboardPraktikan = new Chart(ctx, {
+var cty = document.getElementById('chartDashboardPraktikan').getContext('2d');
+var chart = new Chart(cty, {
     type: 'line',
     data: {
         labels: ['Modul 1', 'Modul 2', 'Modul 3', 'Modul 4', 'Modul 5', 'Modul 6'],
@@ -37,7 +37,7 @@ var chartDashboardPraktikan = new Chart(ctx, {
 });
 
 var ctx = document.getElementById('chartStrukdat').getContext('2d');
-var chartStrukdat = new Chart(ctx, {
+var chart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['Modul 1', 'Modul 2', 'Modul 3', 'Modul 4', 'Modul 5', 'Modul 6'],
@@ -75,7 +75,7 @@ var chartStrukdat = new Chart(ctx, {
 });
 
 var ctx = document.getElementById('chartAlpro').getContext('2d');
-var chartAlpro = new Chart(ctx, {
+var chart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['Modul 1', 'Modul 2', 'Modul 3', 'Modul 4', 'Modul 5', 'Modul 6'],
