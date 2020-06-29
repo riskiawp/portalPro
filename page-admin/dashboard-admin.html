@@ -69,42 +69,39 @@
             <section class="section">
                 <div class="section-header">
                     <h1>Dashboard</h1>
-                    <h4 class="section-header-breadcrumb sub-title" id="dayDisplay">ini tanggal</h4>
+                    <span class="section-header-breadcrumb sub-title" id="dayDisplay">ini tanggal</span>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <a href=# class="">
-                            <div class="card card-statistic-1">
-                                <div class="card-icon bg-dark btn-dark">
-                                    <b>20/21</b>
-                                </div>
-                                <div class="card-wrap">
-                                    <div class="card-header">
-                                        <h4>Active Practicum</h4>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>
+                                    DATA STRUCTURE
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <span class="badge badge-dark">Angkatan 2019</span>
+                                        <div class="box">
+                                            <label for="jumlah_praktikan">Jumlah Praktikan</label>
+                                            <input type="text" disabled value="450" class="form-control input-group" id="jumlah_praktikan">
+
+                                            <label for="jumlah_asisten">Jumlah Asisten</label>
+                                            <input type="text" disabled value="20" class="form-control input-group" id="jumlah_asisten">
+
+                                            <label for="jumlah_modul">Jumlah Modul</label>
+                                            <input type="text" disabled value="6" class="form-control input-group" id="jumlah_modul">
+
+                                            <input type="button" class="btn btn-outline-success form-control form-divider" value="Manage">
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        Data Structure
+                                    <div class="col-lg-8 col-md-8 col-sm-12">
+                                        <canvas id="chartStrukdat" height="100"></canvas>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <a href=# class="">
-                            <div class="card card-statistic-1">
-                                <div class="card-icon bg-dark btn-dark">
-                                    <b>20/21</b>
-                                </div>
-                                <div class="card-wrap">
-                                    <div class="card-header">
-                                        <h4>Active Practicum</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        Algorithm
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -112,8 +109,30 @@
                         <div class="card">
                             <div class="card-header">
                                 <h4>
-                                    Judul
+                                    ALGORITHM AND PROGRAMMING
                                 </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <span class="badge badge-dark">Angkatan 2019</span>
+                                        <div class="box">
+                                            <label for="jumlah_praktikan">Jumlah Praktikan</label>
+                                            <input type="text" disabled value="450" class="form-control input-group" id="jumlah_praktikan">
+
+                                            <label for="jumlah_asisten">Jumlah Asisten</label>
+                                            <input type="text" disabled value="20" class="form-control input-group" id="jumlah_asisten">
+
+                                            <label for="jumlah_modul">Jumlah Modul</label>
+                                            <input type="text" disabled value="6" class="form-control input-group" id="jumlah_modul">
+
+                                            <input type="button" class="btn btn-outline-success form-control form-divider" value="Manage">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12">
+                                        <canvas id="chartAlpro" height="100"></canvas>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
