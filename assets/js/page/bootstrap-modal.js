@@ -2,7 +2,8 @@
 
 $("#modal-1").fireModal({title:'Submitted',body: 'Jurnal Berhasil Dikirim'});
 $("#modal-11").fireModal({title:'Submitted',body: 'TP Berhasil Dikirim'});
-$("#modal-12").fireModal({title:'Updated',body: 'Grade Updated Successfully :)'});
+$("#modal-12").fireModal({title:'Updated',body: 'Updated Successfully :)'});
+$("#modal-13").fireModal({title:'Added',body: 'Added Successfully :)'});
 
 let modal_3_body = '<p>Object to create a button on the modal.</p><pre class="language-javascript"><code>';
 modal_3_body += '[\n';
