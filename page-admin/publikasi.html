@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Tambah Asisten</title>
+    <title>Publication</title>
+
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -69,65 +70,71 @@
         <div class="main-content">
             <section class="section">
                 <div class="section-header">
-                    <h1>Management User</h1>
+                    <h1>Publication</h1>
                 </div>
+                <!-- PUT THE BODY HERE-->
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-12">
                       <div class="card">
                         <div class="card-header">
-                          <h4>Update User</h4>
+                          <h4>Data Structure Practicum</h4>
                         </div>
                         <div class="card-body">
-                            <div class="form-group row">
-                                <label for="inputKodeAsisten" class="col-sm-3 col-form-label">Asisten Code</label>
-                                <div class="col-sm-9">
-                                  <input type="text" class="form-control" id="inputKodeAsisten" placeholder="Asisten Code">
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="inputName" class="col-sm-3 col-form-label">Name</label>
-                                <div class="col-sm-9">
-                                  <input type="text" class="form-control" id="inputName" placeholder="Name">
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="selectClass" class="col-sm-3 col-form-label">Class</label>
-                                <div class="col-sm-9">
-                                <select id="selectClass" class="form-control">
-                                  <option>SI-42-01</option>
-                                  <option>SI-42-02</option>
-                                  <option>SI-42-03</option>
-                                  <option>SI-42-04</option>
-                                  <option>SI-42-05</option>
-                                  <option>SI-42-06</option>
-                                  <option>SI-42-07</option>
-                                  <option>SI-42-08</option>
-                                  <option>SI-42-09</option>
-                                  <option>SI-42-INT</option>
-                                </select>
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="inputUsername" class="col-sm-3 col-form-label">Username</label>
-                                <div class="col-sm-9">
-                                  <input type="text" class="form-control" id="inputUsername" placeholder="Username">
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
-                                <div class="col-sm-9">
-                                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                </div>
-                              </div>
-                              <div class="form-group text-right">
-                                <button class="btn btn-success mr-1" type="submit" id="modal-12">Update</button>
-                            </div>
+                            <div class="tab-content tab-bordered">
+                                <div class="tab-pane fade show active">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-lg table-submisi">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Preliminary</th>
+                                                <th>Preliminary Eng</th>
+                                                <th>Module</th>
+                                                <th>Module Eng</th>
+                                                <th>Youtube</th>
+                                                <th>Pretest</th>
+                                                <th>Pretest Eng</th>
+                                                <th>Assigment</th>
+                                                <th>Assigment Eng</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>https://bit.ly/Preliminary1</td>
+                                                <td>https://bit.ly/Preliminary1</td>
+                                                <td>https://bit.ly/Module1</td>
+                                                <td>https://bit.ly/Module1</td>
+                                                <td>https://bit.ly/YUTUP</td>
+                                                <td>https://bit.ly/PreTest1</td>
+                                                <td>https://bit.ly/PreTest1</td>
+                                                <td>https://bit.ly/Ass1</td>
+                                                <td>https://bit.ly/Ass1</td>
+                                                <td><a href="input-nilai-asisten.html" class="btn btn-icon btn-dark"><i class="far fa-edit"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>1202180821</td>
+                                                <td>Arddhana Ardd</td>
+                                                <td>SI-42-Reguler</td>
+                                                <td>70</td>
+                                                <td>70</td>
+                                                <td>100</td>
+                                                <td>70</td>
+                                                <td><a href="input-nilai-asisten.html" class="btn btn-icon btn-dark"><i class="far fa-edit"></i> Edit</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>    
                         </div>
-                      
-
-<!--                start from div w/ class -> section-body-->
+                      </div>
+                    </div>
             </section>
         </div>
+    </div>
     <footer class="main-footer">
         <div class="footer-left">
             Copyright &copy; Daspro Laboratory 2020
@@ -158,6 +165,5 @@
 <script src="../assets/js/page/index.js"></script>
 <script src="../assets/js/page/chart-data.js"></script>
 <script src="../assets/js/page/data-Tables.js"></script>
-<script src="../assets/js/page/bootstrap-modal.js"></script>
 </body>
 </html>
