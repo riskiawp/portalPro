@@ -74,8 +74,8 @@ var chart = new Chart(ctx, {
     }
 });
 
-var ctx = document.getElementById('chartAlpro').getContext('2d');
-var chart = new Chart(ctx, {
+var ctz = document.getElementById('chartAlpro').getContext('2d');
+var chart = new Chart(ctz, {
     type: 'line',
     data: {
         labels: ['Modul 1', 'Modul 2', 'Modul 3', 'Modul 4', 'Modul 5', 'Modul 6'],
@@ -111,5 +111,7 @@ var chart = new Chart(ctx, {
         }
     }
 });
+
+
 
 var ctx = document.getElementById('chartBasdat').getContext('2d');
