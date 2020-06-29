@@ -24,7 +24,6 @@ var tpTime = setInterval(function() {
     }
 }, 1000);
 
-
 var jurnalTime = setInterval(function() {
     // Get today's date and time
     var now = new Date().getTime();

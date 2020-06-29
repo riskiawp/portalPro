@@ -64,4 +64,14 @@ tr {
   height: 50px;
 }
 
+.sub-title {
+  color: #1673FF;
+}
+
+.card-btn {
+  font-family: "Montserrat Bold" !important;
+  color: white !important;
+  margin: 0 auto !important;
+}
+
 /*# sourceMappingURL=custom.css.map */
