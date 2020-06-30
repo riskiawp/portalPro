@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- CSS Libraries -->
-    <link rel="stylesheet" href="../node_modules/jqvmap/dist/jqvmap.min.css">
-    <link rel="stylesheet" href="../node_modules/weathericons/css/weather-icons.min.css">
-    <link rel="stylesheet" href="../node_modules/weathericons/css/weather-icons-wind.min.css">
-    <link rel="stylesheet" href="../node_modules/summernote/dist/summernote-bs4.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="../assets/sources/scss/style.css">
@@ -38,7 +34,7 @@
                                 Invalid Token
                               </div>
                           <p class="text-muted">The token will be given by assistant!</p>
-                          <form method="POST">
+                          
                             <div class="form-group">
                                 <label>Assistant Code</label>
                                 <select class="form-control">
@@ -49,12 +45,12 @@
                             </div>
                             <div class="form-group">
                               <label for="input">Token</label>
-                              <input id="input" type="input" class="form-control" name="email" required>
+                              <input id="input" type="input" class="form-control">
                             </div>
-                                    <button id="btnSubmit" class="btn btn-primary btn-lg btn-block" tabindex="-1">Submit</button>
+                                    <button id="btnSubmit" class="btn btn-primary btn-lg btn-block">Submit</button>
                                  </div>
-                            
-                          </form>
+                        </div>
+                      </section>
                         </div>
                       </div>
                       <div class="simple-footer">
@@ -66,13 +62,6 @@
               </section>
 </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('#btnSubmit').click(function(){
-      $('#myAlert').show('fade');
-    })
-  });
 </script>
 <!-- General JS Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -84,12 +73,6 @@
 <script src="../assets/js/stisla.js"></script>
 
 <!-- JS Libraies -->
-<script src="../assets/node_modules/simpleweather/jquery.simpleWeather.min.js"></script>
-<script src="../assets/node_modules/chart.js/dist/Chart.min.js"></script>
-<script src="../assets/node_modules/jqvmap/dist/jquery.vmap.min.js"></script>
-<script src="../assets/node_modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-<script src="../assets/node_modules/summernote/dist/summernote-bs4.js"></script>
-<script src="../assets/node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
 
 <!-- Template JS File -->
 <script src="../assets/js/scripts.js"></script>

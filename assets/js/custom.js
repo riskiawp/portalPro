@@ -6,3 +6,9 @@
  */
 
 "use strict";
+
+$(document).ready(function(){
+    $('#btnSubmit').click(function(){
+        $('#myAlert').show();
+    });
+});
