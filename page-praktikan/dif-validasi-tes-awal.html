@@ -20,7 +20,7 @@
 
 </head>
 
-<body >
+<body>
 <div id="app">
     <div class="main-wrapper">
         <div class="navbar-bg"></div>
@@ -48,39 +48,44 @@
             </ul>
         </nav>
         <!-- Main Content -->
-        <div class="main-content pl-5 pr-5">
+        <div class="main-content pl-lg-5 pr-lg-5 pl-md-5 pr-md-5 pr-sm-0 pl-sm-0">
             <section class="section container">
                 <div class="section-header">
+                    <div class="btn">
+                        <button type="button" class="btn btn-danger fa fa-arrow-left"></button>
+                    </div>
                     <h1>PreTest</h1>
                 </div>
                 <div class="section-body">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="tes-awal">
-                                <form action="" method="post">
-                                    <div class="form-group">
-                                        <div class="tes-awal-soal">
-                                            <img src="../assets/images/example-image-50.jpg" alt="" class="image-preview mr-5" style="float: left;max-width: 250px">
-                                            <p class="soal">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus ducimus earum facilis hic labore minus nam necessitatibus nesciunt odit porro, qui quis saepe, sint tenetur, veritatis vero voluptates voluptatibus.
-                                            </p>
-                                            <div class="form-inline pilihan-jawaban">
-                                                <button class="btn btn-light btn-tes-awal">A</button>
-                                                <button class="btn btn-light btn-tes-awal">A</button>
-                                                <button class="btn btn-light btn-tes-awal">A</button>
-                                                <button class="btn btn-light btn-tes-awal">A</button>
-                                                <button class="btn btn-light btn-tes-awal">A</button>
-                                            </div>
-                                            <div class="form-divider"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card-primary">
+                                <div class="card-header"><h4>Pretest Validation</h4></div>
+                                <div class="section-body">
+                                    <div class="card-body">
+                                        <div class="alert alert-primary collapse" id="myAlert">
+                                            Invalid Token
                                         </div>
+                                        <p class="text-muted">The token will be given by assistant!</p>
+
+                                        <div class="form-group">
+                                            <label>Assistant Code</label>
+                                            <select class="form-control">
+                                                <option>--- Choose Your Assistant Code ---</option>
+                                                <option>DEF</option>
+                                                <option>RAA</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="input">Token</label>
+                                            <input class="form-control" id="input" type="input">
+                                        </div>
+                                        <button class="btn btn-primary btn-lg btn-block" id="btnSubmit">Submit</button>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="alert alert-danger" style="position: fixed;z-index: 99;bottom: 10%;left: 2%">
-                    <span id="countdownTP"></span>
                 </div>
             </section>
         </div>
