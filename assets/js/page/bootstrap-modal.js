@@ -1,7 +1,7 @@
 "use strict";
 
-$("#modal-1").fireModal({title:'Submitted',body: 'Jurnal Berhasil Dikirim'});
-$("#modal-11").fireModal({title:'Submitted',body: 'TP Berhasil Dikirim'});
+$("#modal-1").fireModal({title:'Submitted',body: 'Assignment Successfully Sent!'});
+$("#modal-11").fireModal({title:'Submitted',body: 'Preliminary Successfully Sent!'});
 $("#modal-12").fireModal({title:'Updated',body: 'Updated Successfully :)'});
 $("#modal-13").fireModal({title:'Added',body: 'Added Successfully :)'});
 
