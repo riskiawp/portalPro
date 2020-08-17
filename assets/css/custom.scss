@@ -80,3 +80,22 @@ tr {
   margin-top: 5%;
   padding: 8px;
 }
+
+.answer-Rad{
+  border: 2px black;
+
+}
+.answer-Lab{
+  font-family: Roboto;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+fieldset{
+  div{
+    padding: 5px;
+  }
+  div:hover{
+    background-color: #95999c;
+  }
+}

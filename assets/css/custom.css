@@ -30,8 +30,7 @@ p {
 }
 
 td {
-  padding: 15px !important;
-  text-align: center;
+  padding: 0px !important;
 }
 
 .pilihan-jawaban tr:hover {
@@ -52,7 +51,6 @@ td {
 
 th, td {
   white-space: nowrap;
-  text-align: center;
 }
 
 div.dataTables_wrapper {
@@ -79,6 +77,23 @@ tr {
 .box {
   margin-top: 5%;
   padding: 8px;
+}
+
+.answer-Rad {
+  border: 2px black;
+}
+
+.answer-Lab {
+  font-family: Roboto;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+fieldset div {
+  padding: 5px;
+}
+fieldset div:hover {
+  background-color: #95999c;
 }
 
 /*# sourceMappingURL=custom.css.map */
